@@ -6,6 +6,7 @@ Inlämningar och assignments fr Game Creator
 	Assignment - Klar
 
 ## 02 - Learning to Program
-	Assignment - wip
+	Assignment - Klar
 
 ## 03 - Vector
+	Assignment - wip
