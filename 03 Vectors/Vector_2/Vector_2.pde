@@ -1,5 +1,6 @@
 PVector mousePosition = new PVector(0,0);
 PVector ellipsePosition = new PVector (0,0);
+PVector mouseDirection = new PVector (0,0);
 
 int value = 0;
 
@@ -26,13 +27,15 @@ void draw() {
 
   }
   }
-
   void mouseReleased ()
   {
-print("hej");
+  	print ("hey");
+  	
+  	mouseDirection = new PVector (mouseX - ellipsePosition.x, mouseY - ellipsePosition.y).normalize();
 
-  }
-  
+  	  }
+
+
   void mousePressed ()
   {
     ellipsePosition.x = mouseX;
