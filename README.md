@@ -9,4 +9,6 @@ Inlämningar och assignments fr Game Creator
 	Assignment - Klar
 
 ## 03 - Vector
-	Assignment - wip
+	Assignment - almost!
+	
+## 04 - 	
