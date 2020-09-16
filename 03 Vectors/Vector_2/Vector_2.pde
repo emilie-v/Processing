@@ -23,7 +23,7 @@ void draw() {
   ellipse(ellipsePosition.x, ellipsePosition.y, 12, 12);
 
   mousePosition.add(mouseDirection);
-  ellipse(mouseX, mouseY, size, size);
+  // ellipse(mouseX, mouseY, size, size); // Ritar ut ellipse på muspositionen
 
   if (mousePressed)  {
     line (ellipsePosition.x, ellipsePosition.y, mouseX, mouseY);
