@@ -1,14 +1,13 @@
 PVector mousePosition = new PVector(0, 0);
 PVector ellipsePosition = new PVector (0, 0);
-PVector mouseDirection = new PVector (0, 0);
-float speed = 1;
+PVector travelDirection = new PVector (0, 0);
+float speed = 0.05;
 float size = 10;
 boolean traveling = false;
 
 int value = 0;
 
 void setup()
-
 {
   size (640, 480);
   ellipsePosition.x = width / 2;
@@ -23,38 +22,29 @@ void draw() {
   fill (value);
   ellipse(ellipsePosition.x, ellipsePosition.y, 12, 12);
 
-  mousePosition.add(mouseDirection);
-  // ellipse(mouseX, mouseY, size, size); // ritar ut en ellipse på musens pos
-
   if (mousePressed)  {
     line (ellipsePosition.x, ellipsePosition.y, mouseX, mouseY);
-    // line (mousePosition.x, mousePosition.y, mousePosition.x, mousePosition.y);
   }
+
   if (traveling) {
-  	ellipsePosition.add(mouseDirection);
-  	ellipsePosition.mult(speed);
-  	
+  	ellipsePosition.add(travelDirection);
   }
-  bounce ();
+   bounce ();
 }
 
 void bounce ()
 {
-	if (mousePosition <= 0 || mousePosition.x >= width) {
-		ellipsePosition.x = ellipsePosition.x * -1;
+	if (ellipsePosition.x <= 0 || ellipsePosition.x >= width) {
+		travelDirection.x = travelDirection.x * -1;
 	}
-	if (mousePosition.y <= 0 || mousePosition.y >= height) {
-		ellipsePosition.y = ellipsePosition.y * -1;
+	if (ellipsePosition.y <= 0 || ellipsePosition.y >= height) {
+		travelDirection.y = travelDirection.y * -1;
 	}
 }
 void mouseReleased () {
-  mouseDirection = new PVector (mouseX - ellipsePosition.x, mouseY - ellipsePosition.y).normalize();
-  mouseDirection = mouseDirection.mult(speed);
+  travelDirection = new PVector (mouseX - ellipsePosition.x, mouseY - ellipsePosition.y);
+  travelDirection = travelDirection.mult(speed);
   traveling = true;
-  //mouseDirection = ellipsePosition.sub(mousePosition);
-  //mouseDirection = mouseDirection.mult(speed);
-
-
 }
 
 void mousePressed ()
