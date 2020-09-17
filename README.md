@@ -12,4 +12,6 @@ Inlämningar och assignments fr Game Creator
 	Assignment - almost!
 	
 ## 04 - Input & Motion
-	ASsignment - wip
+	Assignment - wip
+
+## 05 - 
