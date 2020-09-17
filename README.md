@@ -3,15 +3,18 @@ Inlämningar och assignments fr Game Creator
 
 
 ## 01 - Fundamentals
-	Assignment - Klar
+	Assignment - Finished
 
 ## 02 - Learning to Program
-	Assignment - Klar
+	Assignment - Finished
 
 ## 03 - Vector
-	Assignment - almost!
+	Assignment - Finished
 	
 ## 04 - Input & Motion
 	Assignment - wip
 
-## 05 - 
+## 05 - tba
+
+## 06 - Class & Objects
+	Assignment
