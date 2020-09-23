@@ -12,7 +12,7 @@ long time;
 
 void setup ()
 {
-	size (640, 480);
+	size(640,480);
 	position.x = width/2;
 	position.y = height/2;
 	frameRate (54);

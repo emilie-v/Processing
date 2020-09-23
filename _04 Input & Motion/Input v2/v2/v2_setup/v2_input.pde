@@ -20,23 +20,23 @@ void keyPressed()
 	else if (keyCode == RIGHT || key == 'd')
 		moveRight = true;
 
-	if (keyCode == UP || 'w')
-		moveUp true;
+	if (keyCode == UP || key == 'w')
+		moveUp = true;
 
 	else if (keyCode == DOWN || key == 's')
-		moveDown true;
+		moveDown = true;
 }
 
 void keyReleased ()
 {
-	if (keyCode == LEFT || key = 'a')
+	if (keyCode == LEFT || key == 'a')
 		moveLeft = false;
-	else if (keyCode == RIGHT || key 'd')
+	else if (keyCode == RIGHT || key == 'd')
 	moveRight = false;
 
-	if (keyCode == UP || key = 'w')
+	if (keyCode == UP || key == 'w')
 		moveUp = false;
-	else if (keyCode == DOWN || key 's')
+	else if (keyCode == DOWN || key == 's')
 		moveDown = false;
 }
 
@@ -46,7 +46,7 @@ PVector input()
 	inputVector.y = 0;
 
 	if (moveLeft) {
-		inputVector.x += 1;
+		inputVector.x -= 1;
 	}
 
 	if (moveRight) {
