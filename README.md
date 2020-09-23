@@ -17,7 +17,7 @@ Inlämningar och assignments fr Game Creator
 ## 05 - tba
 
 ## 06 - Class & Objects
-	Assignment
+	Reading the materials
 	
 ## 07 - Collision & Zombies
 	Assignment
