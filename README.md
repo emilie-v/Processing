@@ -12,12 +12,12 @@ Inlämningar och assignments fr Game Creator
 	Assignment - Finished
 	
 ## 04 - Input & Motion
-	Assignment - wip, something is wrong, can't figure it out
+	Assignment - Finished
 
 ## 05 - tba
 
 ## 06 - Class & Objects
-	Reading the materials
+	wip
 	
 ## 07 - Collision & Zombies
 	Assignment
