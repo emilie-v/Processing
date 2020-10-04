@@ -4,8 +4,8 @@ class Player {
 	PVector velocity = new PVector();
 	PVector acceleration = new PVector();
 
-	float accelerationMultiplyer = 0.75;
-	float deaccelerationMultiplyer = 0.15;
+	float accelerationMultiplyer = 0.77;
+	float deaccelerationMultiplyer = 0.17;
 	float speed = 77;
 	float maxSpeed = 7;
 
@@ -22,10 +22,12 @@ class Player {
 	void update (float deltaTime)
 	{
 		acceleration = input();
+		
 		acceleration.mult(accelerationMultiplyer * speed * deltaTime);
 
 		if (acceleration.mag() == 0) {
 			acceleration.x -= velocity.x * deaccelerationMultiplyer * speed * deltaTime;
+			acceleration.y -= velocity.y * y deaccelerationMultiplyer * speed * deltaTime;
 		}
 
 		velocity.add(acceleration);
@@ -34,11 +36,12 @@ class Player {
 		PVector move = velocity.copy();
 
 		move.mult(speed * deltaTime);
+
 		position.add(move);
 	}
 
 	void draw() {
-		fill (200, 50, 50);
+		fill (207, 70, 70);
 		ellipse(position.x, position.y, size, size);
 	}
 }
