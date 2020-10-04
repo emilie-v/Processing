@@ -21,3 +21,9 @@ Inlämningar och assignments fr Game Creator
 	
 ## 07 - Collision & Zombies
 	Assignment
+	
+## 08 - Shooter Project
+	Group project finished.
+	
+## 09 - Clean Code
+	Still working, would like more time.
