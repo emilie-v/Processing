@@ -17,13 +17,13 @@ Inlämningar och assignments fr Game Creator
 ## 05 - tba
 
 ## 06 - Class & Objects
-	wip
+	Assignment - Finished
 	
 ## 07 - Collision & Zombies
-	Assignment
+	Assignment - wip
 	
 ## 08 - Shooter Project
-	Group project finished.
+	Group project & extras finished.
 	
 ## 09 - Clean Code
-	Still working, would like more time.
+	Still working, need another day or so to look over the code.
