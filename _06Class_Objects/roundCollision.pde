@@ -10,4 +10,8 @@ boolean roundCollision (float x1, float y1, float size1, float x2, float y2, flo
 	{
 		return false;
 	}
+	else
+	{
+		return true;
+	}
 }
