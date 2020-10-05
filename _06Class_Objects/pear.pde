@@ -10,6 +10,7 @@ public class Pear extends Ball {
 
 void draw() {
 	fill (0, 255, 0);
+	ellipse(position.x, position.y, size/3, size * 1.2);
 	}	
-	
+
 }
