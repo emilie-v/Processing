@@ -15,7 +15,5 @@ void draw () {
 	fill (0);
 	line (0, -4, 5, -8);
 	pop ();
-}
-
-
+	}
 }
