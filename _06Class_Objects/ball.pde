@@ -2,7 +2,7 @@ class Ball
 	{
 	PVector position;
 	PVector velocity;
-	int size 17;
+	int size = 17;
 	color ballColor;
 
 	public Ball ()
@@ -39,11 +39,12 @@ class Ball
 		position.x += velocity.x;
 		position.y += velocity.y;
 
-		if (position.x > width - size / 2 || position.x < 0 size / 2) {
+		if (position.x > width - size / 2 || position.x < 0 + size / 2) {
 			velocity.x *= -1;
 		}
-		if (position.y > width - size / 2 || position.y < 0 size / 2) {
-			velocity.y *= -1;
+		if (position.y > width - size / 2 || position.y < 0 + size / 2) {
+			velocity.y *= -1; 
+		}
 	}
 
 	void draw () 
@@ -53,4 +54,3 @@ class Ball
 	}
 
 	}
-}

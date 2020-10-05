@@ -27,7 +27,7 @@ class Player {
 
 		if (acceleration.mag() == 0) {
 			acceleration.x -= velocity.x * deaccelerationMultiplyer * speed * deltaTime;
-			acceleration.y -= velocity.y * y deaccelerationMultiplyer * speed * deltaTime;
+			acceleration.y -= velocity.y * deaccelerationMultiplyer * speed * deltaTime;
 		}
 
 		velocity.add(acceleration);

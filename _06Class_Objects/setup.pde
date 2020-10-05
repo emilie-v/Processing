@@ -6,9 +6,12 @@ Ball [] balls;
 float deltaTime;
 float time;
 
+void settings () {
+	size (520, 520);
+}
+
 void setup ()
 {
-  size(512, 512);
   ellipseMode(CENTER);
 
   start ();
@@ -20,7 +23,7 @@ void start ()
 
 	balls = new Ball [numberofBalls];
 
-	for (int t = 0; i < balls.length; ++i) {
+	for (int i = 0; i < balls.length; ++i) {
 		balls [i] = new Ball();
 	}
 }
