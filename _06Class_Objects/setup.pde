@@ -6,6 +6,8 @@ Ball [] balls;
 float deltaTime;
 float time;
 
+PFont myFont;
+
 void settings () {
 	size (520, 520);
 }
@@ -13,6 +15,9 @@ void settings () {
 void setup ()
 {
   ellipseMode(CENTER);
+
+  myFont = createFont("Spotnik.ttf", 32);
+  textFont (myFont);
 
   start ();
 }
