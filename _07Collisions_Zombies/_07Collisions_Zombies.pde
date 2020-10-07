@@ -3,7 +3,10 @@ boolean gamOver = false;
 
 void setup() {
 	size (700, 600);
-	////
+	frameRate (30);
+	ellipseMode(CENTER);
+
+	init();
 }
 
 void draw() {
@@ -14,4 +17,9 @@ void draw() {
 	characterManager.draw();
 }
 
-//////////
+void init() {
+	zombies = new Zombies[amountOfZombies];
+	humans = new Humans[amountOfHumans]; /// or is it Characters??
+
+	game
+}
