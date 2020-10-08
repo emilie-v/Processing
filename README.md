@@ -20,10 +20,14 @@ Inlämningar och assignments fr Game Creator
 	Assignment - Finished
 	
 ## 07 - Collision & Zombies
-	Assignment - wip
+	Assignment - wip, almost.
 	
 ## 08 - Shooter Project
-	Group project & extras finished.
+	Assignment - Finished
+	Extracurriculars - Finished
 	
 ## 09 - Clean Code
-	Still working, need another day or so to look over the code.
+	Still working, need some more time. Would like to catch up on the rest.
+
+## 10 - Game of Life
+	Not yet started
