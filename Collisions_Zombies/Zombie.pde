@@ -1,10 +1,21 @@
-public class Zombie extends Character
+public class Zombie extends Character{
+
+	public Zombie (float xPosition, float yPosition, int characterSize, float xVelocity, float yVelocity) 
+	{
+		skinColor = zombieColor; 
+		this.characterSize = characterSize;
+
+		position = new PVector(xPosition, yPosition);
+		velocity = new PVector(xVelocity, yVelocity);
+	}
+
+}
+
+/*public class Zombie extends Character
 {
 	public Zombie () {
 		super();
-
-
-}
+}*/
 /*
 void update ()
 {
@@ -33,4 +44,3 @@ void update ()
 		}
 	}
 }*/
-}
