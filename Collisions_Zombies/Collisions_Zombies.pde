@@ -1,6 +1,4 @@
 long currentTime;
-float deltaTime;
-float time;
 
 boolean humansAlive = true;
 float gameOverTime = 0;
