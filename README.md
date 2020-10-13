@@ -20,7 +20,7 @@ Inlämningar och assignments fr Game Creator
 	Assignment - Finished
 	
 ## 07 - Collision & Zombies
-	Assignment - wip, almost.
+	Assignment - almost!!
 	
 ## 08 - Shooter Project
 	Assignment - Finished
