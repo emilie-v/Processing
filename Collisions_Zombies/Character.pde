@@ -1,4 +1,48 @@
-class Character
+public class Character
+{
+	PVector position = new PVector();
+	PVector velocity = new PVector();
+
+	color skinColor;
+	int characterSize = 20;
+
+	void Update()
+	{
+
+		position.x += velocity.x * deltaTime; 
+		position.y += velocity.y * deltaTime; 
+ 
+		wrap(); 
+		fill(skinColor); 
+		ellipse(position.x, position.y, characterSize, characterSize); 
+	}
+
+	void wrap()
+	{
+		if(position.x >= width - (characterSize / 2)) 
+		{
+			position.x = characterSize;
+		}
+
+
+		if(position.x <= characterSize / 2)
+		{
+			position.x = width - characterSize;
+		}
+
+		if(position.y >= height - (characterSize / 2)) 
+		{
+			position.y = characterSize;
+		}
+
+		if(position.y <= characterSize / 2) 
+		{
+			position.y = height - characterSize;
+		}
+	}
+}
+
+/*class Character
 	{
 	PVector position;
 	PVector velocity;
@@ -40,7 +84,7 @@ class Character
 		ellipse (position.x, position.y, characterSize, characterSize);
 	}
 
-	}
+	}*/
 
 	/*	class Character //should behave like ball class from previous lectures
 		{
