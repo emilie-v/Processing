@@ -4,12 +4,20 @@ void keyPressed ()
 
 		exit();
 	}
-}
 
-void keyReleased()
-{
+
+	if (key == 'k') {
+
+		killAllHumans();
+
+	}
+
 	if (key == 'r') {
 
-		//init ();
+		restart();
+
 	}
 }
+
+
+
