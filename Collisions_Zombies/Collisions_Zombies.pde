@@ -1,5 +1,7 @@
 long currentTime;
 
+PFont font;
+
 boolean humansAlive = true;
 float gameOverTime = 0;
 
@@ -67,15 +69,29 @@ void CalculateDeltaTime()
 
 void displayGameOver()
 {
+	font = createFont("Metropolis.ttf", 64);
 	textAlign(CENTER);
+	textFont (font);
 	fill(255,0,0);
-	textSize(32);
 	text("Game Over", width/2, height/2);
+
+
 	fill(0,0,255);
-	textSize(16);
+	//textSize(64);
 	text("Time until all humans were zombies: " + nf(gameOverTime,0,1) + " s", width/2, height/2 + 30);
 }
 
+void killAllHumans() 
+{
+	characterManager.killAllHumans();
+}
+
+void restart()
+{
+	characterManager.createCharacters();
+
+	humansAlive = true;
+}
 
 
 /*CharacterManager characterManager;

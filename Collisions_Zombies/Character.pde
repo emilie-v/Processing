@@ -19,6 +19,7 @@ public class Character
 
 	void wrap()
 	{
+
 		if(position.x >= width - (characterSize / 2)) 
 		{
 			position.x = characterSize;

@@ -51,7 +51,7 @@ public class CharacterManager
  		}		
  	}
 
- 	boolean checkZombieCollision(Character one, Character two)
+ 	boolean checkZombieCollision (Character one, Character two)
 	{	
 		int maxDistance = one.characterSize/2 + two.characterSize/2; 
 
@@ -74,7 +74,7 @@ public class CharacterManager
 	boolean checkForHumansAlive()
 	{
 		for (int i = 0; i < characters.length; ++i) 
-			
+
 		{
 			if(characters[i] instanceof Human)
 			{
@@ -84,6 +84,25 @@ public class CharacterManager
 		return false;
 	}
 
+
+void killAllHumans() 
+{
+	for (int i = 0; i < characters.length; ++i) 
+ 		{
+ 				float positionX = characters[i].position.x; 
+				float positionY = characters[i].position.y;
+
+				float velocityX = characters[i].velocity.x /2;
+				float velocityY = characters[i].velocity.y /2;
+
+				int charSize = characters[i].characterSize; 
+
+				characters[i] = new Zombie(positionX,positionY,charSize,velocityX,velocityY); 
+ 		}
+
+ humansAlive = checkForHumansAlive ();
+ 
+	}
  }
 
 
