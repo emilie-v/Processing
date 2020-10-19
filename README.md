@@ -20,7 +20,7 @@ Inlämningar och assignments fr Game Creator
 	Assignment - Finished
 	
 ## 07 - Collision & Zombies
-	Assignment - almost!!
+	Assignment - Finished
 	
 ## 08 - Shooter Project
 	Assignment - Finished
@@ -30,4 +30,4 @@ Inlämningar och assignments fr Game Creator
 	Still working, need some more time. Would like to catch up on the rest.
 
 ## 10 - Game of Life
-	Not yet started
+	Assignment - wip
