@@ -99,7 +99,7 @@ void draw() {
     }
   }
 
-  background (100, 150, 220);
+  background (105, 105, 105);
 
   for (int x = 0; x < numberOfColumns; x++)
   {

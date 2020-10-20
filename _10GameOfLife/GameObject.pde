@@ -1,20 +1,22 @@
 public class GameObject {
 	float x, y;
-	float size;
+	float cellSize;
 
 	boolean alive = false;
+	boolean buffer = false;
 
-	public GameObject (float x, float y. float size) {
+	public GameObject (float x, float y, float cellSize) {
 
 		this.x = x;
 		this.y = y;
-		this.size = size;
+		this.cellSize = size;
 	}
 
 	void draw() {
 
 		if (alive) {
-			ellipse(x, y, size, size);
+			fill(255,105,180);
+			rect(x, y, cellSize, cellSize);
 		}
 	}
 }
