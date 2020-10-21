@@ -30,4 +30,4 @@ Inlämningar och assignments fr Game Creator
 	Still working, need some more time. Would like to catch up on the rest.
 
 ## 10 - Game of Life
-	Assignment - wip
+	Assignment - Finished
