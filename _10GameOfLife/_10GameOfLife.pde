@@ -1,5 +1,5 @@
 GameObject[][] cells;
-float cellSize = 10;
+float cellSize = 50;
 int numberOfColumns = 5;
 int numberOfRows = 5;
 int spawnChancePercentage = 15;
@@ -136,9 +136,8 @@ void draw() {
 
 void isAlive (int neighbour, int x, int y)
 {
-  cells[x][y].buffer = cells[x][y].alive;
 
-  if (neighbour >3)
+  if (neighbour > 3 || neighbour < 3)
   {
     cells[x][y].buffer = false;
   }
